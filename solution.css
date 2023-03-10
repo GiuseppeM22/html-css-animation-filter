@@ -90,15 +90,45 @@
     
 }
 
-.ex-12-button, .ex-13-button:hover {
+.ex-12-button:hover {
     animation-name: box;
     animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
-  
 }
-.ex-12-top-white, .ex-13-top-white {
-   
+
+@keyframes box {
+    
+    50%{
+        transform: rotate(1turn);
+        left: 0%;
+    }
+    100%{
+        left: 10%;
+    }
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
-  
+
+.ex-13-button:hover {
+    animation-name: completeTurn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+@keyframes completeTurn {
+
+    0%{
+        transform: scale(1.2);
+    }
+    
+    50%{
+        transform: rotate(1turn);
+        left: 0%;
+    }
+    100%{
+        left: 10%;
+        transform: scale(0.5);
+    }
+}
+
+/****PER I TUTOR: gli ultimi tre non mi sono riusciti li ho fatti comunque a modo mio XD poi vado a vedere la soluzione :D******/ 
